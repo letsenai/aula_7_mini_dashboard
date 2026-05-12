@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Vision</title>
+
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo-container">
+
+                <img src="./assets/logo.png"
+                    alt="Logo Music Vision"
+                    class="logo">
+
+                <div>
+                    <h1>Music Vision</h1>
+                    <p>Biblioteca de streaming musical.</p>
+                </div>
+
+            </div>
+
+            <div class="header-search">
+
+                <img src="./assets/lupa.png"
+                    alt="Pesquisar"
+                    class="search-icon">
+
+                <input
+                    type="text"
+                    id="pesquisa"
+                    placeholder="Pesquisar música ou artista..."
+                >
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <aside class="sidebar">
+
+            <section class="resumo">
+
+                <div class="card-resumo">
+                    <h3>Total de músicas</h3>
+                    <p id="totalMusicas">0</p>
+                </div>
+
+                <div class="card-resumo">
+                    <h3>Total de plays</h3>
+                    <p id="totalPlays">0</p>
+                </div>
+
+                <div class="card-resumo">
+                    <h3>Média de duração</h3>
+                    <p id="mediaDuracao">0</p>
+                </div>
+
+                <div class="card-resumo">
+                    <h3>Música mais tocada</h3>
+                    <p id="maisTocada">-</p>
+                </div>
+
+            </section>
+
+        </aside>
+
+        <section class="conteudo">
+
+            <section class="formulario-section">
+
+                <h2>Adicionar Nova Música</h2>
+
+                <form id="formMusica">
+
+                    <input
+                        type="text"
+                        id="titulo"
+                        placeholder="Título da música"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        id="artista"
+                        placeholder="Artista"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        id="album"
+                        placeholder="Álbum"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        id="genero"
+                        placeholder="Gênero"
+                        required
+                    >
+
+                    <input
+                        type="number"
+                        id="duracao"
+                        placeholder="Duração (segundos)"
+                        required
+                    >
+
+                    <input
+                        type="number"
+                        id="plays"
+                        placeholder="Quantidade de plays"
+                        required
+                    >
+
+                    <button type="submit">
+                        Adicionar Música
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section>
+
+                <h2 class="titulo-lista">
+                    Catálogo Musical
+                </h2>
+
+                <div
+                    id="listaMusicas"
+                    class="lista-musicas">
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Desenvolvido por Leticia, Flávia e Eduardo © 2026
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

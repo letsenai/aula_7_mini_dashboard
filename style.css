@@ -1,0 +1,357 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f1a;
+    color: white;
+    min-height: 100vh;
+
+}
+
+header {
+
+    padding: 20px;
+    background-color: #161625;
+    border-bottom: 3px solid #a855f7;
+
+}
+
+.header-content {
+
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.logo-container {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.logo {
+
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+
+}
+
+.logo-container h1 {
+
+    font-size: 3rem;
+    margin-bottom: 5px;
+
+}
+
+.logo-container p {
+
+    color: #cfcfcf;
+
+}
+
+.header-search {
+
+    display: flex;
+    align-items: center;
+    background-color: #1b1b2f;
+    padding: 12px 18px;
+    border-radius: 40px;
+    width: 420px;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.15);
+    transition: 0.3s;
+
+}
+
+.header-search:hover {
+
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+
+}
+
+.search-icon {
+
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 12px;
+    opacity: 0.8;
+
+}
+
+.header-search input {
+
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+
+}
+
+.header-search input::placeholder {
+
+    color: #9f9f9f;
+
+}
+
+.dashboard {
+
+    display: flex;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+
+}
+
+.sidebar {
+
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 20px;
+
+}
+
+.resumo {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.card-resumo {
+
+    background-color: #1b1b2f;
+    padding: 25px;
+    border-radius: 18px;
+    border-left: 5px solid #a855f7;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.15);
+    transition: 0.3s;
+
+}
+
+.card-resumo:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.card-resumo h3 {
+
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #d4d4d4;
+
+}
+
+.card-resumo p {
+
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.conteudo {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.formulario-section {
+
+    background-color: #171727;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.1);
+
+}
+
+.formulario-section h2 {
+
+    margin-bottom: 20px;
+
+}
+
+#formMusica {
+
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+
+}
+
+#formMusica input {
+
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+
+}
+
+#formMusica button {
+
+    background-color: #a855f7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+#formMusica button:hover {
+
+    background-color: #9333ea;
+
+}
+
+.titulo-lista {
+
+    margin-bottom: 20px;
+
+}
+
+.lista-musicas {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.card-musica {
+
+    background-color: #1b1b2f;
+    width: 320px;
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.1);
+    transition: 0.3s;
+
+}
+
+.card-musica:hover {
+
+    transform: translateY(-5px);
+    border-color: #a855f7;
+
+}
+
+.card-musica h3 {
+
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+
+}
+
+.card-musica p {
+
+    margin-bottom: 10px;
+    color: #d4d4d4;
+
+}
+
+.btn-remover {
+
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #a855f7;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.btn-remover:hover {
+
+    background-color: #9333ea;
+
+}
+
+footer {
+
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #161625;
+    color: #cfcfcf;
+
+}
+
+@media (max-width: 1000px) {
+
+    .dashboard {
+
+        flex-direction: column;
+
+    }
+
+    .sidebar {
+
+        width: 100%;
+        position: static;
+
+    }
+
+    .header-content {
+
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .header-search {
+
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    .logo-container h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .card-musica {
+
+        width: 100%;
+
+    }
+
+}
